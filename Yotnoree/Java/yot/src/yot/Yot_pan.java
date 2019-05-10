@@ -9,7 +9,7 @@ public class Yot_pan extends JFrame {
 	JButton [][]pan_button;
 	Playgame play;
 	int size_x=1000;
-	int size_y=1000;
+	int size_y=700;
 	int btn_x = 50;
 	int btn_y = 50;
 	JButton throw_button, new_mal;
@@ -136,7 +136,7 @@ public class Yot_pan extends JFrame {
 		new_mal.setSize(150,50);
 		new_mal.setBorderPainted(true);
 		new_mal.setContentAreaFilled(true);
-		new_mal.setLocation(450,600);
+		new_mal.setLocation(450,550);
 		new_mal.setBackground(new Color(153,204,255));
 		panel_pan.add(new_mal);
 		new_mal.addActionListener(play);
@@ -192,7 +192,7 @@ public class Yot_pan extends JFrame {
 			test_button[q].setSize(60,60);
 			test_button[q].setBorderPainted(true);
 			test_button[q].setContentAreaFilled(true);
-			test_button[q].setLocation(200+q*60,700);
+			test_button[q].setLocation(50+q*60,450);
 			panel_pan.add(test_button[q]);
 			test_button[q].addActionListener(play);
 		}
