@@ -1,8 +1,11 @@
 package yot;
 
-import java.awt.*;
-import javax.swing.*;
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
+
+import javax.swing.*;
 
 public class Yot_pan extends JFrame {
 	JPanel panel_pan;
@@ -21,10 +24,6 @@ public class Yot_pan extends JFrame {
 	JLabel fin;
 	JLabel []player_info;
 	public Yot_pan(Playgame play) {
-		Toolkit tools = Toolkit.getDefaultToolkit();
-		Image mouseimg = tools.getImage("./img/cursor.png");
-		Cursor newcursor = tools.createCustomCursor(mouseimg, new Point(0,0), "LOL");
-		setCursor(newcursor);
 		panel_pan = new JPanel();
 		pan_button = new JButton [3][21];
 		int xpos=btn_x*8;
@@ -179,17 +178,11 @@ public class Yot_pan extends JFrame {
 			panel_pan.add(player_info_btn[i]);
 			panel_pan.add(player_info[i]);
 		}
-		String []s = new String[6];
-		s[0]="백도";
-		s[1]="모";
-		s[2]="도";
-		s[3]="개";
-		s[4]="걸";
-		s[5]="윷";
-		for(int q=0;q<6;q++)
+
+		for(int q=0;q<7;q++)
 		{
-			test_button[q] = new JButton(s[q]);
-			test_button[q].setSize(60,60);
+			test_button[q] = new JButton(Integer.toString(q));
+			test_button[q].setSize(70,60);
 			test_button[q].setBorderPainted(true);
 			test_button[q].setContentAreaFilled(true);
 			test_button[q].setLocation(200+q*60,700);

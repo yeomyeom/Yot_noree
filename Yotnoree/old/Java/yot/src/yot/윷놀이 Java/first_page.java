@@ -1,7 +1,9 @@
 package yot;
 
+import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
 import javax.swing.*;
 
 public class first_page extends JFrame{
@@ -86,8 +88,11 @@ public class first_page extends JFrame{
         		}
         		if(e.getSource()==start)
         		{
-        			System.out.println(people+" , "+ mal);
+        			//start.setSelected(false);
+        			System.out.println(people+" "+mal);
         			new Playgame(people, mal);
+        			System.out.println("Playgame create");
+        			//new Yot_pan();
         		}
         	}
         };

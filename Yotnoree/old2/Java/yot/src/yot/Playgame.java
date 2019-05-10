@@ -64,7 +64,6 @@ public class Playgame implements ActionListener{
 	void go_1()
 	{
 		if(control==1) {
-			result =0;
 			nowplayer = play[turn];
 			pan.changeplayer(turn);
 			pan.buttoncolor(1);
@@ -274,23 +273,22 @@ public class Playgame implements ActionListener{
 				}
 			}
 		}
-		for(int r=0;r<6;r++)
+		for(int r=0;r<7;r++)
 		{
 			if(e.getSource()==pan.test_button[r])
 			{
 				if(control==1)
 				{
-					go_1();
-					r--;
 					if(r==0)
 					{
-						result = 5;
+						result = -1;
 					}
 					else
 					{
 						result = r;
 					}
 					pan.printyotresult(result);//던진 결과 화면에 출력
+					control =2;
 				}
 			}
 		}

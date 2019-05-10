@@ -61,11 +61,6 @@ public class mal {
 				x=0;
 				y=5+y;
 			}
-			else if(x==1 && y==3)//5.10 bug fix
-			{
-				x=2;
-				y=3;
-			}
 			else if(x==2 && y<1)
 			{
 				x=0;
