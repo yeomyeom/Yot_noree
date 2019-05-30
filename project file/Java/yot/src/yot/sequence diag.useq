@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.3" icons="true" automaticImage="JPEG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="yot.FirstPage" project="yot" file="/yot/src/yot/FirstPage.java" binary="false" 
+    label="firstPage" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="392" y="0"/>  
+  </object>  
+  <object id="2" language="java" name="yot.PlayGame" project="yot" file="/yot/src/yot/PlayGame.java" binary="false" 
+    label="playGame" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="392" y="0"/>  
+  </object>  
+  <object id="3" language="java" name="yot.Yoot" project="yot" file="/yot/src/yot/Yoot.java" binary="false" label="yoot" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="392" y="0"/>  
+  </object>  
+  <object id="4" language="java" name="yot.Player" project="yot" file="/yot/src/yot/Player.java" binary="false" 
+    label="player" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="392" y="0"/>  
+  </object>  
+  <object id="5" language="java" name="yot.Piece" project="yot" file="/yot/src/yot/Piece.java" binary="false" 
+    label="piece" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="392" y="0"/>  
+  </object>  
+  <object id="6" language="java" name="yot.YotBoard" project="yot" file="/yot/src/yot/YotBoard.java" binary="false" 
+    label="yotBoard" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="392" y="0"/>  
+  </object>
+</sequence-diagram>
